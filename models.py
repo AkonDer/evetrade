@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, Float, Boolean, DateTime, String, Date
+from config import *
 
 # SQLAlchemy Model
 Base = declarative_base()
@@ -38,6 +39,7 @@ def read_file_to_db(file_path, db_url='sqlite:///evetrade_data.db'):
     # Read file using pandas
     df = pd.read_csv(file_path)
 
+
     # Convert DataFrame to list of MarketLog objects
     records = df.to_dict(orient='records')
     market_logs = [MarketLog(**record) for record in records]
@@ -51,7 +53,7 @@ def read_file_to_db(file_path, db_url='sqlite:///evetrade_data.db'):
 
 
 # Replace with your actual file path
-file_path = 'C:/Users/Admin/Documents/EVE/logs/Marketlogs/The Forge-Small Energy Collision Accelerator II-2023.11.28 094356.txt'
+file_path = PATH_TO_LOG + 'The Forge-Mexallon-2023.11.27 172226.txt'
 
 # Call the function
 read_file_to_db(file_path)

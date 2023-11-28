@@ -1,0 +1,1 @@
+PATH_TO_LOG = 'C:/Users/vyach/OneDrive/Документы/EVE/logs/Marketlogs/'

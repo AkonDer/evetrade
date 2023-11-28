@@ -1,6 +1,7 @@
 import os
 import time
 import threading
+from config import *
 
 
 def scan_directory(directory, known_files):
@@ -34,7 +35,7 @@ def start_monitoring_thread(directory_path):
 
 
 # Путь к директории
-directory_path = "C:/Users/Admin/Documents/EVE/logs/Marketlogs"
+directory_path = PATH_TO_LOG
 
 # Запуск мониторинга в отдельном потоке
 monitor_thread = start_monitoring_thread(directory_path)
