@@ -52,7 +52,3 @@ def clear_database(session):
     session.commit()
 
 
-filename = "The Forge-Capital Zero-Point Field Manipulator-2023.11.29 124823.txt"
-module_name = extract_module_name(filename)
-clear_database(session)
-load_data_to_db(CONFIG['PATH_TO_LOG'] + filename, module_name)
