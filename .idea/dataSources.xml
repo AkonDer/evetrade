@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="market_logs" uuid="6978eb93-faf2-4682-8bba-adeed141ab2f">
+    <data-source source="LOCAL" name="market_logs [2]" uuid="455e4ece-9c11-42f7-8df9-451ccb5e2963">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:E:\python\evetrade\market_logs.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:H:\evetrade\market_logs.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>

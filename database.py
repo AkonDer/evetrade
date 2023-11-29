@@ -18,6 +18,15 @@ def load_data_to_db(filename, module_name):
     # Считывание данных из файла
     with open(filename, 'r') as file:
         lines = file.readlines()[1:]  # Пропускаем заголовок
+
+        # Проверка и удаление существующих записей с тем же названием
+        existing_records = session.query(MarketLog).filter(MarketLog.name == module_name).all()
+        if existing_records:
+            print(f"Удаляем существующие записи с названием {module_name}")
+            for record in existing_records:
+                session.delete(record)
+            session.commit()
+
         for line in lines:
             data = line.strip().split(',')
             # Создание нового объекта MarketLog для каждой строки данных
