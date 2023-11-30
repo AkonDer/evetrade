@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="market_logs" uuid="6978eb93-faf2-4682-8bba-adeed141ab2f">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>e4de875a-98cd-41c3-a214-63704f3096dd</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:E:\python\evetrade\market_logs.db</jdbc-url>
