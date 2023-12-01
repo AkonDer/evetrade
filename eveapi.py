@@ -1,10 +1,10 @@
 import requests
 
 # URL для EVE Swagger Interface
-esi_url = "https://esi.evetech.net/latest/"
+esi_url = "https://esi.evetech.net/latest"
 
 # Конечная точка API для получения информации о структурах во вселенной
-endpoint = "dogma/attributes/"
+endpoint = "/latest/characters/90340749/"
 
 # Полный URL для запроса
 url = esi_url + endpoint
@@ -19,3 +19,4 @@ else:
     data = f"Error: {response.status_code}"  # Ошибка при выполнении запроса
 
 print(data)
+
